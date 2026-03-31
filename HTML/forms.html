@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <h2>Forms in HTML:</h2>
+
+    <!-- for of lable tag and id in input tag are connected with each other -->
+
+    <form action="resume.html">  <!--After click of submit button it will take action-->
+      <label for="mhk">First Name: </label>
+      <input
+        id="mhk"
+        type="text"
+        minlength="5"
+        maxlength="35"
+        required
+        placeholder="First Name"
+      />
+
+      <br /><br />
+      <label for="mhk1">Middle Name: </label>
+      <input type="text" id="mhk1" minlength="5" maxlength="35" value="Mr." />
+
+      <br /><br />
+      <label for="">Last Name: </label>
+      <input type="text" minlength="5" maxlength="35" disabled />
+
+      <br /><br />
+      <label for="">Age: </label>
+      <input type="number" />
+
+      <br /><br />
+      <label for="">Email: </label>
+      <input type="email" />
+
+      <br /><br />
+      <label for="">Date of joining: </label>
+      <input type="date" />
+
+      <br /><br />
+      <label for="">Please Enter your password: </label>
+      <input type="password" />
+
+      <br /><br />
+      <p>Enter your shirt size:</p>
+
+      <input type="radio" id="small" name="shirtsize" />
+      <!--When we write checked in input tag it will tick small size by default-->
+      <label for="small">Small</label>
+
+      <input type="radio" id="medium" name="shirtsize" />
+      <label for="medium">Medium</label>
+
+      <input type="radio" id="large" name="shirtsize" />
+      <label for="large">Large</label>
+
+      <input type="radio" id="extra" name="shirtsize" />
+      <label for="extra">Extra Large</label>
+
+      <br /><br />
+      <label for="clr">Select your shirt colour: </label>
+      <input id="clr" type="color" />
+
+      <br /><br />
+      <label for="paymentoption">Please select payment method: </label>
+      <select name="payment" id="paymentoption">
+        <option value=""></option>
+        <option value="">UPI</option>
+        <option value="">Credit/Debit Card</option>
+        <option value="">COD</option>
+        <option value="">Net Banking</option>
+      </select>
+
+      <br /><br />
+      <label for="cmts">Feedback: </label>
+      <!-- <input type="text"> -->
+      <textarea
+        name="cmt"
+        id="cmts"
+        rows="12"
+        cols="85"
+        placeholder="Please Enter your valuable feedback"
+      ></textarea>
+
+      <br><br>
+      <input type="reset">
+      <input type="submit">
+
+    </form>
+  </body>
+</html>
